@@ -1,0 +1,35 @@
+/* Estructura de la tabla */
+#superior, #inferior {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 10px; /* Espaciado entre columnas */
+    max-width: 1800px; /* Limita el ancho total */
+    margin: 0 auto; /* Centra la tabla */
+}
+
+/* Contenedores de imagen y enlace */
+.divsSuperiores, .divsInferiores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imágenes */
+.divsSuperiores img {
+    width: 100%; /* Ocupar todo el espacio disponible */
+    aspect-ratio: 16 / 9; /* Mantener relación de aspecto */
+    object-fit: cover; /* Recortar para ajustar */
+}
+
+.divsSuperiores:nth-child(2) img {
+    object-position: top; /* Asegura que la cabeza de la jirafa no se corte */
+}
+
+/* Enlaces */
+.divsInferiores a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    align-self: flex-start; /* Alineado a la izquierda */
+    padding: 5px;
+}

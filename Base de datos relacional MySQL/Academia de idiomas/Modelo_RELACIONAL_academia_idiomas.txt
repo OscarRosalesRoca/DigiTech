@@ -1,0 +1,8 @@
+· MODELO RELACIONAL
+---------------------------------------------------------------------------------------------+
+
+ALUMNO (nombre, apellidos, dni_a(PK), direccion, fecha_de_nacimiento, sexo <[ H o M ]>, codigo(FK))
+
+PROFESOR (nombre, apellidos, dni_p(PK), direccion, titulo_academico <[ a elegir entre LDO, DDO, CFGS ]>, precio_hora <[ con dos decimales y siempre mayor que 0 ]>)
+
+CURSO (nombre, codigo(PK), num_alum_reco <[ mínimo 10 personas ]>, dni_p(FK), fecha_inicio, fecha_final <[ siempre mayor que la de inicio]>, num_horas <[ mayor o igual a 80 ]>)

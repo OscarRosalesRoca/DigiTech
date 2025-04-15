@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <style>
+        /* Estilo para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px 100px 50px 100px;
+            padding: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            border: 1px solid black;
+        }
+
+        /* Estilo para el título */
+        h1 {
+            text-align: left;
+            font-size: 60px;
+            margin-bottom: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        /* Estilo para el menú breadcrumb */
+        .breadcrumb {
+            list-style: none;
+            padding: 0;
+            margin: 0px; /* Espacio debajo del menú */
+            text-align: left; /* Centrar el menú */
+        }
+
+        /* Separadores '>' para el primer nav */
+        #nav1 .breadcrumb li {
+            display: inline;
+        }
+
+        #nav1 .breadcrumb li+li::before {
+            content: ' > ';
+            padding: 0 5px;
+        }
+
+        /* Separadores '|' para el segundo nav */
+        #nav2 .breadcrumb li {
+            display: inline;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #nav2 .breadcrumb li+li::before {
+            content: ' | ';
+            padding: 0 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: ""; /* No mostrar el ">" en el último elemento */
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Estilo para el párrafo */
+        p {
+            text-align: justify;
+            text-indent: 40px; /* Sangría para el texto */
+            margin: 40px 50px 40px 0px;
+            font-size: 15px;
+        }
+
+        /* Estilo para la lista de menús */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        div { 
+            margin: 0px 40px 0px 40px;
+        }
+
+        /* Estilos generales para eliminar puntos predeterminados */
+        #black, #white {
+            list-style-type: none; /* Quitar los puntos predeterminados */
+        }
+
+        /* Estilo para los elementos del primer nivel (puntos negros) */
+        #black > li {
+            position: relative; /* Necesario para posicionar los pseudoelementos */
+        }
+
+        /* Puntos negros para el primer nivel */
+        #black > li::before {
+            content: ''; /* Punto negro */
+            color: black; /* Color negro */
+            position: absolute; /* Posicionar de manera absoluta */
+            left: -20px; /* Ajustar el espacio a la izquierda */
+            height: 5px;
+            width: 5px;
+            background-color: black; /* Color del círculo */
+            border-radius: 50%; /* Hacer que el fondo sea un círculo */
+            margin-top: 13px; /* Centrar verticalmente */
+        }
+
+        /* Estilo para los elementos del segundo nivel (puntos blancos) */
+        #white {
+            padding-left: 20px; /* Sangrar el segundo nivel */
+        }
+
+        /* Círculos negros para el segundo nivel */
+        #white li {
+            position: relative; /* Necesario para posicionar los pseudoelementos */
+        }
+
+        #white li::before {
+            content: ''; /* No mostrar contenido */
+            position: absolute; /* Posicionar de manera absoluta */
+            left: -20px; /* Ajustar el espacio a la izquierda */
+            width: 6px; /* Ancho del círculo */
+            height: 6px; /* Alto del círculo */
+            background-color: black; /* Color del círculo */
+            border-radius: 50%; /* Hacer que el fondo sea un círculo */
+            display: inline-block; /* Necesario para que funcione el tamaño */
+            margin-top: 11px; /* Centrar verticalmente */
+        }
+
+        /* Punto blanco dentro del círculo */
+        #white li::after {
+            content: ''; /* Punto negro */
+            color: white; 
+            position: absolute; /* Posicionar de manera absoluta */
+            left: -19.2px; /* Ajustar el espacio a la izquierda */
+            height: 4px;
+            width: 4px;
+            background-color: white; /* Color del círculo */
+            border-radius: 50%; /* Hacer que el fondo sea un círculo */
+            margin-top: 12px; /* Centrar verticalmente */
+        }
+    </style>
+</head>
+<body style="background-color: #9ad9f7;">
+    <div>
+        <h1>Pastas</h1>
+    </div>
+    <div>
+        <nav id="nav1">
+            <ul class="breadcrumb">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="comidaLigera.html">Comida ligera</a></li>
+                <li><a href="variedades.html">Variedades</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div style="margin-bottom: 60px;">
+        <h2><a href="">Pastas</a></h2>
+        <ul id="black">
+            <li>Tallarines
+                <ul id="white">
+                    <li>Al tuco</li>
+                    <li>Parissine</li>
+                </ul>
+            </li>
+            <li>Ñoquis de papa caseros</li>
+            <li>Ravioles
+                <ul id="white">
+                    <li>Al tuco</li>
+                    <li>Al tuco con estofado</li>
+                </ul>
+            </li>
+            <li>Capelettis
+                <ul id="white">
+                    <li>Al tuco</li>
+                    <li>A la boloñesa</li>
+                </ul>
+            </li>
+            <li>Sorrentinos con estofado</li>
+            <li>Canelones
+                <ul id="white">
+                    <li>De verdura y pollo</li>
+                    <li>De ricota</li>
+                </ul>
+            </li>
+            <li>Lasaña rellena (para comparitr)</li>
+        </ul>
+    </div>
+    <div>
+        <hr>
+        <nav id="nav2">
+            <ul class="breadcrumb" style="text-align: center; margin-bottom: 40px;"">
+                <li><a href="entradasEnsaladas.html" id="menu2">ENTRADAS | ENSALADAS</a></li>
+                <li><a href="carnesBlancas.html" id="menu2">CARNES BLANCAS</a></li>
+                <li><a href="carnesRojas.html" id="menu2">CARNES ROJAS</a></li>
+                <li><a href="pastas.html" id="menu2">PASTAS</a></li>
+                <li><a href="postres.html" id="menu2">POSTRES</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

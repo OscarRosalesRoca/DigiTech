@@ -1,0 +1,62 @@
+[
+    {
+        "marca": "BMW",
+        "modelo": "Serie 3",
+        "kilometros": 120000,
+        "anyo": 2018,
+        "precio": 25000,
+        "motor": "2.0L Turbo",
+        "foto": "resources/bmw.jpg",
+        "disponible": true
+    },
+    {
+        "marca": "Fiat",
+        "modelo": "500",
+        "kilometros": 60000,
+        "anyo": 2020,
+        "precio": 13000,
+        "motor": "1.2L Gasolina",
+        "foto": "resources/fiat.jpg",
+        "disponible": false
+    },
+    {
+        "marca": "Golf",
+        "modelo": "GTI",
+        "kilometros": 85000,
+        "anyo": 2019,
+        "precio": 28000,
+        "motor": "2.0L Turbo",
+        "foto": "resources/golf.jpg",
+        "disponible": true
+    },
+    {
+        "marca": "Opel",
+        "modelo": "Corsa",
+        "kilometros": 50000,
+        "anyo": 2021,
+        "precio": 16000,
+        "motor": "1.4L Gasolina",
+        "foto": "resources/opel.jpg",
+        "disponible": true
+    },
+    {
+        "marca": "Peugeot",
+        "modelo": "208",
+        "kilometros": 70000,
+        "anyo": 2017,
+        "precio": 14000,
+        "motor": "1.5L Diésel",
+        "foto": "resources/peugeot.jpg",
+        "disponible": false
+    },
+    {
+        "marca": "Subaru",
+        "modelo": "Impreza WRX",
+        "kilometros": 90000,
+        "anyo": 2016,
+        "precio": 32000,
+        "motor": "2.5L Turbo",
+        "foto": "resources/subaru.jpg",
+        "disponible": true
+    }
+]

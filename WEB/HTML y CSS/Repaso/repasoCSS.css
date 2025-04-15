@@ -1,0 +1,79 @@
+body {
+    margin: 40px 200px 40px 200px;
+}
+
+div {
+    margin: 20px 10px 20px 10px;
+}
+
+p {
+    margin: 0px;
+}
+
+#num1 p.rojo:hover {
+    color: green;
+}
+
+#num2:hover {
+    font-size: 1.5em;
+}
+
+#num3:hover {
+    font-style: italic;
+}
+
+.contenedorRojo {
+    border: 1px solid red;
+}
+
+.rojo {
+    color: red;
+}
+
+.fucsia {
+    color: fuchsia;
+}
+
+.contenedorFucsia {
+    border: 1px solid fuchsia;
+}
+
+.contenedorVerde {
+    border: 1px solid green;
+}
+
+.verde {
+    color: green;
+}
+
+.contenedorMarron {
+    border: 1px solid rgb(172, 84, 12);
+}
+
+.marron {
+    color: rgb(172, 84, 12);
+}
+
+.fondoAmarillo {
+    background-color: yellow;
+}
+
+.contenedorAzul {
+    border: 1px solid blue;
+}
+
+.morado {
+    color: blueviolet;
+}
+
+.naranja {
+    color: orange;
+}
+
+.contenedorNaranja {
+    border: 1px solid orange;
+}
+
+.fondoNegro {
+    background-color: black;
+}

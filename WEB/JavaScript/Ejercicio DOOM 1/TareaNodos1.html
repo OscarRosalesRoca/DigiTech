@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="TareaNodos1.css">
+</head>
+<body>
+    <div id="background">
+        <div id="titulo">
+            <h1>Opciones del menú del día</h1>
+        </div>
+        <div id="primero">
+            <div class="izquierda">
+                <select name="primerPlato" id="primerPlato">
+                    <option value="porDefecto">Elija un primer plato</option>
+                    <option value="primerPlato1">Ensalada</option>
+                    <option value="primerPlato2">Verduras</option>
+                </select>
+            </div>
+            <div class="derecha">
+                <div class="cuadrado">
+                    <img src="resources/porDefecto.jpg" class="foto" id="IMGprimero">
+                </div>
+            </div>
+        </div>
+        <div id="segundo">
+            <div class="izquierda">
+                <select name="segundoPlato" id="segundoPlato">
+                    <option value="porDefecto">Elija un segundo plato</option>
+                    <option value="segundoPlato1">Pescado</option>
+                    <option value="segundoPlato2">Carne</option>
+                </select>
+            </div>
+            <div class="derecha">
+                <div class="cuadrado">
+                    <img src="resources/porDefecto.jpg" class="foto" id="IMGsegundo">
+                </div>
+            </div>
+        </div>
+        <div id="tercero">
+            <div class="izquierda">
+                <select name="postre" id="postre">
+                    <option value="porDefecto">Elija un postre</option>
+                    <option value="postre1">Torrija</option>
+                    <option value="postre2">TartaDeQueso</option>
+                </select>
+            </div>
+            <div class="derecha">
+                <div class="cuadrado">
+                    <img src="resources/porDefecto.jpg" class="foto" id="IMGpostre">
+                </div>
+            </div>
+        </div>
+        <div id="pie">
+            <div class="izquierda">
+                <label>
+                    <input type="checkbox" name="descuento" value="descuento"> Consigue un 10% de descuento
+                </label>
+                <br>
+                <button id="calcular">¡A comer!</button>
+                <p id="pagar"></p>
+            </div>
+        </div>
+    </div>
+    <script src="TareaNodos1.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cartelera>
+    <pelicula>
+        <titulo>El secreto de las abejas</titulo>
+        <direccion>Annabel Jankel</direccion>
+        <duracion>106 min</duracion>
+        <nacionalidad>Reino Unido</nacionalidad>
+        <actores>Holliday Grainger, Anna Paquin, Emun Elliott</actores>
+        <genero>Drama, Romance</genero>
+        <sinopsis>Una médica y una madre soltera entablan una relación secreta en la Escocia de 1950.</sinopsis>
+        <trailer>https://www.youtube.com/embed/RLcoyaokjOg</trailer>
+    </pelicula>
+    <pelicula>
+        <titulo>El vendedor de tabaco</titulo>
+        <direccion>Nikolaus Leytner</direccion>
+        <duracion>108 min</duracion>
+        <nacionalidad>Austria, Alemania</nacionalidad>
+        <actores>Simon Morzé, Bruno Ganz, Johannes Krisch</actores>
+        <genero>Drama</genero>
+        <sinopsis>Un joven aprendiz en un estanco de Viena se hace amigo de Sigmund Freud mientras Austria se hunde en el nazismo.</sinopsis>
+        <trailer>https://www.youtube.com/embed/20zPdTBTbU0</trailer>
+    </pelicula>
+    <pelicula>
+        <titulo>La biblioteca de los libros rechazados</titulo>
+        <direccion>Rémi Bezançon</direccion>
+        <duracion>105 min</duracion>
+        <nacionalidad>Francia</nacionalidad>
+        <actores>Fabrice Luchini, Camille Cottin, Alice Isaaz</actores>
+        <genero>Comedia, Drama</genero>
+        <sinopsis>Una editora descubre un manuscrito en una biblioteca de libros rechazados y lo publica con gran éxito.</sinopsis>
+        <trailer>https://www.youtube.com/embed/f_MT4QOOpMo</trailer>
+    </pelicula>
+    <pelicula>
+        <titulo>La espía roja</titulo>
+        <direccion>Trevor Nunn</direccion>
+        <duracion>101 min</duracion>
+        <nacionalidad>Reino Unido</nacionalidad>
+        <actores>Judi Dench, Sophie Cookson, Stephen Campbell Moore</actores>
+        <genero>Drama, Thriller</genero>
+        <sinopsis>Una anciana es arrestada bajo la acusación de haber espiado para la Unión Soviética en su juventud.</sinopsis>
+        <trailer>https://www.youtube.com/embed/icxPeM19V8s</trailer>
+    </pelicula>
+</cartelera>

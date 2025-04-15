@@ -1,0 +1,18 @@
+HOTEL (ID Hotel (PK), nombre, categoria, direccion, telefono de contacto, nombre del director, ciudad de ubicacion)
+
+ESTANCIAS (codigo (PK), planta, ID Hotel (FK), DNI (FK), dia de finalizacion, dia de inicio)
+USO (código (PK), uso (PK))
+SALONES (codigo (PK), aforo, equipamiento)
+INDIVIDUALES (codigo (PK), tipo de decoracion, dimensiones de cama, conexion a internet)
+DOBLES (codigo (PK), ancho de cama, tipo de baño)
+SUITE (codigo (PK), dimensiones)
+EQUIPAMIENTO ESPECIAL (codigo (PK), equipamiento especial (PK))
+
+CLIENTE (DNI (PK), nombre y apellidos, direccion, ID Hotel (PK), numero de factura (PK))
+TELEFONO (DNI (PK), telefono (PK))
+EMPRESA (DNI (PK), NIF de la empresa (PK), correo electonico corporativo, persona de contacto)
+PARTICULAR (DNI (PK), como conocio el hotel)TELEFONO (DNI (PK), telefono (PK))
+
+FACTURA (ID Hotel (PK), numero de factura (PK), DNI (FK), servicios prestados, importe de estancia, gastos de telefono, gastos de restauracion)
+
+

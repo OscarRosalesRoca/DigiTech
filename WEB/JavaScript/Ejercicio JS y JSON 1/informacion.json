@@ -1,0 +1,38 @@
+[
+    {
+    "nombre": "Ana García",
+    "sexo": "Femenino",
+    "edad": 28,
+    "imagen": "resources/1.jpg"
+    },
+    {
+    "nombre": "Laura Pérez",
+    "sexo": "Femenino",
+    "edad": 25,
+    "imagen": "resources/2.jpg"
+    },
+    {
+    "nombre": "Sofía López",
+    "sexo": "Femenino",
+    "edad": 30,
+    "imagen": "resources/3.jpg"
+    },
+    {
+    "nombre": "Carlos Rodríguez",
+    "sexo": "Masculino",
+    "edad": 32,
+    "imagen": "resources/4.jpg"
+    },
+    {
+    "nombre": "David Martínez",
+    "sexo": "Masculino",
+    "edad": 27,
+    "imagen": "resources/5.jpg"
+    },
+    {
+    "nombre": "Miguel Sánchez",
+    "sexo": "Masculino",
+    "edad": 29,
+    "imagen": "resources/6.jpg"
+    }
+]

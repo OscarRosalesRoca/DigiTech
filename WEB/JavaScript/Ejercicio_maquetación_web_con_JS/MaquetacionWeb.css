@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#cabecera {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#cabecera img {
+    height: 120px;
+}
+
+#menu {
+    background: red;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#menu p {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#primerApartado {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background: #f8f8f8;
+}
+
+#primerApartado1 img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+#primerApartado2 {
+    max-width: 600px;
+    align-self: flex-start;
+}
+
+#primerApartado2 h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#primerApartado2 p {
+    font-size: 16px;
+}
+
+#primerApartado2 button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#segundoApartado {
+    text-align: center;
+    padding: 20px;
+}
+
+#segundoApartado img {
+    width: 100%;
+    height: auto;
+}
+
+#tercerApartado {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#tercerApartado div {
+    text-align: center;
+}
+
+#tercerApartado img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+#tercerApartado p {
+    font-weight: bold;
+}
+
+#tercerApartado button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

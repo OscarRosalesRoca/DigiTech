@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <style>
+        /* Estilo para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px 100px 50px 100px;
+            padding: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            border: 1px solid black;
+        }
+
+        /* Estilo para el título */
+        h1 {
+            text-align: left;
+            font-size: 60px;
+            margin-bottom: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        /* Estilo para el menú breadcrumb */
+        .breadcrumb {
+            list-style: none;
+            padding: 0;
+            margin: 0px; /* Espacio debajo del menú */
+            text-align: left; /* Centrar el menú */
+        }
+
+        /* Separadores '>' para el primer nav */
+        #nav1 .breadcrumb li {
+            display: inline;
+        }
+
+        #nav1 .breadcrumb li+li::before {
+            content: ' > ';
+            padding: 0 5px;
+        }
+
+        /* Separadores '|' para el segundo nav */
+        #nav2 .breadcrumb li {
+            display: inline;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #nav2 .breadcrumb li+li::before {
+            content: ' | ';
+            padding: 0 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: ""; /* No mostrar el ">" en el último elemento */
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Estilo para el párrafo */
+        p {
+            text-align: justify;
+            text-indent: 40px; /* Sangría para el texto */
+            margin: 40px 50px 40px 0px;
+            font-size: 15px;
+        }
+
+        /* Estilo para la lista de menús */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        div { 
+            margin: 0px 40px 0px 40px;
+        }
+    </style>
+</head>
+<body style="background-color: #9ad9f7;">
+    <div>
+        <h1>Postres</h1>
+    </div>
+    <div>
+        <nav id="nav1">
+            <ul class="breadcrumb">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="comidaLigera.html">Comida ligera</a></li>
+                <li><a href="variedades.html">Variedades</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <h2><a href="">Postres</a></h2>
+        <ul style="margin-bottom: 40px">   
+            <li>Tiramisu</li>
+            <li>Tarta de ricotta</li>
+            <li>Crêpes de manzana</li>
+            <li>Ensalada de frutas</li>
+            <li>Flan casero con crema</li>
+            <li>Mouse de chocolate</li>
+            <li>Tarta de Queso</li>
+            <li>Pudding de Manzana</li>
+            <li>Cuajada de oveja</li>
+            <li>Fruta del tiempo</li>
+            <li>Bombones de licor de Galicia</li>
+        </ul>
+    </div>
+    <div>
+        <hr>
+        <nav id="nav2">
+            <ul class="breadcrumb" style="text-align: center; margin-bottom: 40px;"">
+                <li><a href="entradasEnsaladas.html" id="menu2">ENTRADAS | ENSALADAS</a></li>
+                <li><a href="carnesBlancas.html" id="menu2">CARNES BLANCAS</a></li>
+                <li><a href="carnesRojas.html" id="menu2">CARNES ROJAS</a></li>
+                <li><a href="pastas.html" id="menu2">PASTAS</a></li>
+                <li><a href="postres.html" id="menu2">POSTRES</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

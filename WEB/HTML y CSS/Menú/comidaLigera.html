@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <style>
+        /* Estilo para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px 100px 50px 100px;
+            padding: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            border: 1px solid black;
+        }
+
+        /* Estilo para el título */
+        h1 {
+            text-align: left;
+            font-size: 60px;
+            margin-bottom: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        /* Estilo para el menú breadcrumb */
+        .breadcrumb {
+            list-style: none;
+            padding: 0;
+            margin: 0px; /* Espacio debajo del menú */
+            text-align: left; /* Centrar el menú */
+            font-size: 13px;
+        }
+
+        .breadcrumb li {
+            display: inline; /* Mostrar los elementos del menú en línea */
+            margin-right: 10px; /* Espacio entre enlaces */
+        }
+
+        .breadcrumb li::after {
+            content: ">"; /* Separador entre los enlaces */
+            margin-left: 10px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: ""; /* No mostrar el ">" en el último elemento */
+        }
+
+        .breadcrumb li:last-child::after {
+            content: ""; /* No mostrar el ">" en el último elemento */
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Estilo para el párrafo */
+        p {
+            text-align: justify;
+            text-indent: 40px; /* Sangría para el texto */
+            margin: 40px 50px 40px 0px;
+            font-size: 15px;
+        }
+
+        /* Estilo para la lista de menús */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        div { 
+            margin: 0px 40px 0px 40px;
+        }
+
+        #times{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body style="background-color: #9ad9f7;">
+    <div>
+        <h1>Comida Ligera</h1>
+    </div>
+    <div>
+        <nav>
+            <ul class="breadcrumb">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="comidaLigera.html">Comida ligera</a></li>
+                <li><a href="variedades.html">Variedades</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <p>
+            Nuestros platos se elaboran en el momento, para que pueda degustar su
+            sabor, como si los hubiese preparado en la calidez de su hogar. Además, nos
+            ofrecemos a agregarle <strong>su</strong> toque personal, y si nos avisa con tiempo, le
+            podemos preparar el plato que tanto le gusta y no figura en nuestro menú.
+        </p>
+    </div>
+    <div>
+        <ul id="times">
+            <li>Rissotto con verduras</li>
+            <li>Ravioles negros rellenos de salmón rosado</li>
+            <li>Salmón con panaché de verduras</li>
+            <li>Medallones de lomo con arroz negro</li>
+            <li>Tulipas con frutas y helado</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+· MODELO RELACIONAL
+------------------------------------------------------------------------------------------------------+
+												      
+PROVEEDOR (nombre_proveedor(PK), direccion(PK), ciudad, provincia)				      
+												      
+SUMINISTRA (nombre_proveedor(PK)(FK1), direccion(PK)(FK2), cod_pieza(PK)(FK3), cantidad)
+
+PIEZA (cod_pieza(PK), nombre_pieza, precio, nombre_categoria(FK))
+
+CATEGORIA (nombre_categoria(PK))

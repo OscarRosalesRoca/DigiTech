@@ -1,0 +1,120 @@
+1. Devuelve el nombre del departamento donde trabaja el empleado que tiene el nif 38382980M.
+
+SELECT departamento.nombre, empleado.nif FROM departamento, empleado 
+WHERE departamento.codigo=empleado.codigo_departamento AND nif='38382980M';
+
+<VERSIÓN MEJORADA>
+
+SELECT departamento.nombre AS nombre_departamento
+FROM departamento 
+JOIN empleado ON departamento.codigo = empleado.codigo_departamento
+WHERE empleado.nif = '38382980M';
+
++-------------------------------------------------------------------------------------------------------------------+
+2. Devuelve el nombre del departamento donde trabaja el empleado JOSE RUIZ SANTANA.
+
+SELECT departamento.nombre AS nombre_departamento
+FROM departamento
+JOIN empleado ON departamento.codigo = empleado.codigo_departamento
+WHERE empleado.nombre = 'JOSE' AND empleado.apellido1 = 'RUIZ' AND empleado.apellido2 = 'SANTANA';
+
++-------------------------------------------------------------------------------------------------------------------+
+3. Devuelve un listado con el nombre de los empleados y el nombre del departamento donde trabaja cada uno.
+
+SELECT departamento.nombre, empleado.nombre 
+FROM departamento, empleado 
+WHERE departamento.codigo = empleado.codigo_departamento;
+
++-------------------------------------------------------------------------------------------------------------------+
+4. Devuelve un listado con el nombre de los empleados y el nombre del departamento donde trabaja cada uno. Ordena el resultado, en primer lugar por el nombre del departamento (en orden alfabético) y en segundo lugar por los apellidos y el nombre de los empleados.
+
+SELECT departamento.nombre AS nombre_departamento, empleado.nombre, empleado.apellido1, empleado.apellido2 
+FROM empleado
+JOIN departamento ON empleado.codigo_departamento = departamento.codigo
+ORDER BY departamento.nombre, empleado.apellido1, empleado.apellido2, empleado.nombre;
+
+
++-------------------------------------------------------------------------------------------------------------------+
+5. Devuelve un listado con el código y el nombre del departamento, de aquellos departamentos que tienen empleados.
+
+SELECT DISTINCT departamento.codigo, departamento.nombre 
+FROM departamento
+JOIN empleado ON departamento.codigo = empleado.codigo_departamento;
+
++-------------------------------------------------------------------------------------------------------------------+
+6. Devuelve un listado con el código, el nombre del departamento y el valor del presupuesto actual del que dispone, solo de aquellos departamentos que tienen empleados. El valor del presupuesto actual se puede calcular restando al valor del presupuesto inicial (atributo presupuesto) el valor de los gastos que ha generado (atributo gastos).
+
+SELECT DISTINCT departamento.codigo, departamento.nombre , (departamento.presupuesto-departamento.gastos) AS presupuesto_actual 
+FROM departamento
+JOIN empleado ON departamento.codigo = empleado.codigo_departamento;
+
++-------------------------------------------------------------------------------------------------------------------+
+7. Devuelve un listado con los datos de los empleados que trabajan en el departamento de I+D. Ordena el resultado alfabéticamente por apellidos y nombre.
+
+SELECT empleado.* 
+FROM empleado
+JOIN departamento ON empleado.codigo_departamento = departamento.codigo
+WHERE departamento.nombre = 'I+D'
+ORDER BY empleado.apellido1, empleado.apellido2, empleado.nombre;
+
+
++-------------------------------------------------------------------------------------------------------------------+
+8. Devuelve un listado con los datos de los empleados que trabajan en el departamento de Sistemas, Contabilidad o I+D. Ordena el resultado alfabéticamente. 
+
+SELECT * FROM empleado
+JOIN departamento ON departamento.codigo = empleado.codigo_departamento
+WHERE empleado.codigo_departamento IN (SELECT codigo FROM departamento WHERE nombre = 'I+D' OR nombre = 'Contabilidad' OR nombre = 'Sistemas')
+ORDER BY empleado.nombre;
+
++-------------------------------------------------------------------------------------------------------------------+
+9. Devuelve una lista con el nombre de los empleados que tienen los departamentos que tienen un presupuesto entre 100000 y 200000 euros.
+
+SELECT empleado.nombre FROM empleado
+JOIN departamento ON departamento.codigo=empleado.codigo_departamento
+WHERE departamento.presupuesto BETWEEN 100000 AND 200000; 
+
++-------------------------------------------------------------------------------------------------------------------+
+10. Devuelve un listado con el nombre de los departamentos donde existe algún empleado cuyo segundo apellido sea NULL. Hay que tener en cuenta que no se debe mostrar los nombres de departamentos que estén repetidos.
+
+SELECT DISTINCT departamento.nombre FROM empleado
+JOIN departamento ON empleado.codigo_departamento = departamento.codigo
+WHERE empleado.apellido2 IS NULL;
+
+
+11. Mostrar para cada empleado, el nombre de departamento y el nombre de dicho empleado y su salario.
+
+SELECT empleados.apellido, departamentos.dnombre, empleados.salario 
+FROM empleados, departamentos 
+WHERE empleados.dept_no=departamentos.dept_no;
+
++----------------------------------------------------------------------------------------------------------------------------+
+12. Mostrar el nombre de cada empleado y la localidad del departamento en el que trabaja.
+
+SELECT empleados.apellido, departamentos.ciudad 
+FROM empleados, departamentos 
+WHERE empleados.dept_no=departamentos.dept_no;
+
++----------------------------------------------------------------------------------------------------------------------------+
+13. Mostrar el nombre del departamento y la media de las comisiones de sus empleados.
+
+SELECT departamentos.dnombre, AVG(empleados.comision) AS media_comisiones
+FROM departamentos
+INNER JOIN empleados ON departamentos.dept_no = empleados.dept_no
+GROUP BY departamentos.dnombre;
+
++----------------------------------------------------------------------------------------------------------------------------+
+14. Mostrar los nombres de los departamentos y el número de empleados de los departamentos que tienen más de dos empleados.
+
+SELECT departamentos.dnombre, COUNT(empleados.emp_no) AS Empleados
+FROM departamentos
+JOIN empleados ON departamentos.dept_no = empleados.dept_no
+GROUP BY departamentos.dept_no
+HAVING COUNT(empleados.emp_no) > 2;
+
++----------------------------------------------------------------------------------------------------------------------------+
+15. Mostrar cuantos empleados hay en cada ciudad de los departamentos 
+
+SELECT departamentos.ciudad, COUNT(empleados.emp_no) AS empleados
+FROM departamentos
+LEFT JOIN empleados ON departamentos.dept_no = empleados.dept_no
+GROUP BY departamentos.ciudad;

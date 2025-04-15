@@ -1,0 +1,4 @@
+Nombre: Oscar
+Edad: 23
+Nombre: Maria
+Edad: 22

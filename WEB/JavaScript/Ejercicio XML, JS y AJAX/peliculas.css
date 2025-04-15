@@ -1,0 +1,61 @@
+/* Eliminar margen y padding globalmente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto asegura que el tamaño de los elementos incluya padding y border */
+}
+
+/* Estilo general del body y del layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+#left, #right {
+    width: 50%; /* Cada div ocupa el 50% del ancho */
+    height: 100vh; /* Cada div tiene altura completa */
+    padding: 10px;
+}
+
+#main_right {
+    margin: 0px;
+    padding: 0px;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px; /* Espacio entre celdas */
+}
+
+td {
+    width: calc(50%); 
+    height: auto;
+    background-color: #f3e1a4; /* Fondo amarillo mostaza suave */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 200px; /* Ancho fijo de 100px */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    margin-bottom: 10px; /* Margen debajo de la imagen */
+}
+
+.p_left {
+    text-align: left; /* Título alineado a la izquierda */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.p_right {
+    margin-top: 8px;
+}

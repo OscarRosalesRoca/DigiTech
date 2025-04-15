@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.persona-imagen {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.persona-nombre, .persona-edad, .persona-sexo {
+    font-size: 14px;
+    margin: 5px 0;
+}
